@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="643.0" prefWidth="727.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PZM.view.PzmController">
+   <children>
+      <TabPane prefHeight="643.0" prefWidth="727.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Kunde 1">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="31.0" layoutY="203.0" prefHeight="370.0" prefWidth="696.0" AnchorPane.bottomAnchor="244.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="193.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="534.0" minWidth="10.0" prefWidth="534.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="29.0" text="KundenNr:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="16.0" layoutY="29.0" text="Kundenname:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.rowIndex="2">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="29.0" text="PLZ:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.rowIndex="3">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="29.0" text="Ort:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1">
+                                 <children>
+                                    <TextField fx:id="kuNr" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="kuName" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField fx:id="plz" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="ort" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <Button layoutX="31.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleGetDataOnClick" prefHeight="136.0" prefWidth="604.0" text="Get Data" />
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+          <Tab text="Projekt 0">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutY="14.0" prefHeight="415.0" prefWidth="696.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="193.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="534.0" minWidth="10.0" prefWidth="534.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane GridPane.rowIndex="1">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="29.0" text="KundenNr:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.rowIndex="2">
+                                 <children>
+                                    <Label layoutX="16.0" layoutY="29.0" text="Projektname:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.rowIndex="3">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="29.0" text="GeplStuUmfang:">
+                                       <font>
+                                          <Font size="21.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="proKuNr" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField fx:id="proName" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="geplStuUmfang" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="20.0" text="ProNr:">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane GridPane.columnIndex="1">
+                                 <children>
+                                    <TextField fx:id="proNr" layoutY="25.0" prefHeight="25.0" prefWidth="303.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </GridPane>
+                        <Button layoutX="46.0" layoutY="443.0" mnemonicParsing="false" onAction="#handleProjectGetDataOnClick" prefHeight="136.0" prefWidth="604.0" text="Get Data" />
+                     </children></AnchorPane>
+               </content></Tab>
+          <Tab text="Abteilungen">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="135.0" layoutY="122.0" prefHeight="209.0" prefWidth="432.0">
+                          <columns>
+                            <TableColumn fx:id="abtNr" prefWidth="206.0" text="AbtNr" />
+                            <TableColumn fx:id="abtName" prefWidth="225.0" text="AbtName" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="325.0" layoutY="364.0" mnemonicParsing="false" onAction="#handleAbteilungGetDataOnClick" text="Get Data" />
+                     </children></AnchorPane>
+               </content></Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Timemanagement</string>
+    <string name="home">Home</string>
+    <string name="links">Links</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="TMQ">TMQ</string>
+    <string name="new_task">New task</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="Start_questionnaire">Start questionnaire</string>
+    <string name="urgency">Urgency:</string>
+    <string name="urg_ui">Urgent &amp; Important</string>
+    <string name="urg_nui">Not Urgent &amp; Important</string>
+    <string name="urg_uni">Urgent &amp; Not important</string>
+    <string name="urg_nuni">Not Urgent &amp; Not Important</string>
+
+    <string name="TMQ_info">This Time-Management Questionnaire will help you to know how you are prepared for the realities of a modern busy world. The questionnaire consists of 18 questions, which are divided into three types: Short-Range Planning, Time Attitudes and Long-Range Planning. </string>
+    <string name="final_score">Final score</string>
+    <string name="total_score">Total score:</string>
+    <string name="short_range_planning_score">Short-Range Planning score:</string>
+    <string name="time_attitudes_score">Time Attitudes score:</string>
+    <string name="long_range_planning_score">Long-Range Planning score:</string>
+
+    <string name="quest_1">Do you make a list of the things you have to do each day?</string>
+    <string name="quest_2">Do you plan your day before you start it?</string>
+    <string name="quest_3">Do you make a schedule of the activities you have to do on work days?</string>
+    <string name="quest_4">Do you write a set of goals for yourself for each day?</string>
+    <string name="quest_5">Do you spend time each day planning?</string>
+    <string name="quest_6">Do you have a clear idea of what you want to accomplish during the next week?</string>
+    <string name="quest_7">Do you set and honor priorities?</string>
+    <string name="quest_8_a">Do you often find yourself doing things which interfere with your schoolwork simply because you hate to say "No" to people?</string>
+    <string name="quest_9">Do you feel you are in charge of your own time, by and large?</string>
+    <string name="quest_10_a">On an average class day do you spend more time with personal grooming than doing schoolwork?</string>
+    <string name="quest_11_a">Do you believe that there is room for improvement in the way you manage your time?</string>
+    <string name="quest_12">Do you make constructive use of your time?</string>
+    <string name="quest_13_a">Do you continue unprofitable routines or activities?</string>
+    <string name="quest_14">Do you usually keep you desk clear of everything other than what you are currently working on?</string>
+    <string name="quest_15">Do you have a set of goals for the entire quarter?</string>
+    <string name="quest_16_a">The night before a major assignment is due, are you usually still working on it?</string>
+    <string name="quest_17">When you have several things to do, do you think it is best to do a little bit of work on each one?</string>
+    <string name="quest_18">Do you regularly review your class notes, even when a test is not imminent?</string>
+
+    <string-array name="task_arts_array">
+        <item>All tasks</item>
+        <item>Completed tasks</item>
+        <item>Upcoming tasks</item>
+    </string-array>
+    <string name="links_about">Links that will help you to Improve Your Time Management Skills.</string>
+    <string name="link4_string"><a href="http://www.google.com">Google</a></string>
+    <string name="link2_string">
+        <a href="https://www.lifehack.org/articles/productivity/10-ways-improve-your-time-management-skills.html">10 Practical Ways to Improve Your Time Management Skills</a></string>
+    <string name="link3_string"><a href="https://www.smartsheet.com/all-about-time-management">All About Time Management</a></string>
+    <string name="link1_string"><a href="https://www.researchgate.net/profile/Abraham_Tesser/publication/232573913_Effects_of_Time-Management_Practices_on_College_Grades/links/0046353545613de89d000000/Effects-of-Time-Management-Practices-on-College-Grades.pdf">Effects of Time-Management Practices on College Grades
+</a></string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/quest_txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorBottomNav"
+        android:gravity="center"
+        android:text="@string/Start_questionnaire"
+        android:textColor="@color/black"
+        android:elevation="5dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quest_txt_info"
+        android:layout_width="346dp"
+        android:layout_height="375dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/TMQ_info"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest_txt_header" />
+
+    <ImageView
+        android:id="@+id/nexyImgView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="12dp"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/quest_txt_header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_navigate_next_black_24dp" />
+
+</android.support.constraint.ConstraintLayout>

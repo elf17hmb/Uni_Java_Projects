@@ -1,0 +1,3 @@
+1;Meier;Max;23.04.1994;false
+2;Schmidt;Sven;24.05.1995;true
+3;Lehmann;Lara;25.06.1996;true

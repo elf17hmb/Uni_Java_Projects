@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+	<body>
+	
+	<div th:fragment="headline (txt)">
+	<div class="container">
+	<br>
+		<header>
+		<h3 class="text-center">
+			<span th:if="${txt != null}" th:text="${txt}"></span>
+		</h3>
+		</header>
+		<br>
+		</div>
+		</div>
+	
+	<div th:fragment="nav (all)">
+		<div class="container">
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand p-1 mr-5">PizzaPointApp</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#thenavbarDefault" aria-controls="thenavbarDefault"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+
+			<div class="collapse navbar-collapse " id="thenavbarDefault">
+			<ul class="navbar-nav ml-auto">
+<!-- 					<li class="nav-item" th:if="${all == true}"><a class="navbar-nav p-1"> -->
+<!-- 							<form class="form-inline" th:action="@{/newchat}" method="post"> -->
+<!-- 								<input type="hidden" id="jsonBom" th:value="${currentUser.nickname}"> -->
+<!-- 								<input type="hidden" id="nid" name="nid">  -->
+<!-- 								<input type="submit" class="btn btn-outline-primary" -->
+<!-- 									value="neuer chat"> -->
+<!-- 								onclick="myStopFunction()"  ml-auto -->
+<!-- 							</form> -->
+<!-- 					</a></li> -->
+<!-- 					<li class="nav-item"  th:if="${all == true}"><a class="navbar-nav p-1 "> -->
+<!-- 							<form th:action="@{'/users/' + ${currentUser.id}}" method="post"> -->
+<!-- 								<input type="submit" class="btn btn-outline-secondary" -->
+<!-- 									value="meine daten"> -->
+<!-- 								onclick="myStopFunction()" -->
+<!-- 							</form> -->
+<!-- 					</a> </a></li> -->
+<!-- 					<li class="nav-item"  th:if="${all == true}"><a class="navbar-nav p-1" -->
+<!-- 						th:if="${#strings.toString(currentUser.user.role) == 'ADMIN'}"> -->
+<!-- 							<form th:action="@{/users/managed}" method="post"> -->
+<!-- 								<input type="submit" class="btn btn-outline-secondary" -->
+<!-- 									value="verwaltete nutzer"> -->
+<!-- 							</form> -->
+<!-- 					</a> </a></li> -->
+<!-- <!-- 					<ul class="navbar-nav ml-auto"> --> 
+<!-- 					<li class="nav-item" th:if="${all != true}"> -->
+<!-- 						<a class="navbar-nav p-1"> -->
+<!-- 							<form th:action="@{/first}" method="post"> -->
+<!-- 								<input type="hidden" name="fromUser" id="fromUser" th:value="${currentUser.nickname}"> -->
+<!-- 								<input type="submit" class="btn btn-primary btn-outline-dark" -->
+<!-- 									th:value="fertig"> -->
+<!-- 							</form> -->
+<!-- 						</a> -->
+<!-- 					</li> -->
+					<li class="nav-item"><a class="navbar-nav p-1"
+						th:if="${currentUser != null}">
+							<form th:action="@{/logout}" method="post">
+								<input type="submit" class="btn btn-outline-danger"
+									value="ausloggen">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+					<li class="nav-item"><a class="navbar-nav p-1"
+						th:if="${currentUser == null}">
+							<form th:action="@{/first}" method="post">
+								<input type="submit" class="btn btn-outline-primary"
+									value="einloggen">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+					<li class="nav-item"><a class="navbar-nav p-1"
+						th:if="${currentUser == null}">
+							<form th:action="@{/users/register}" method="post">
+								<input type="submit" class="btn btn-outline-success"
+									value="registrieren">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+					<li class="nav-item" th:if="${currentUser != null}"><a class="navbar-nav p-1"
+						th:if="${#strings.toString(currentUser.user.role) == 'ADMIN'}">
+							<form th:action="@{/users/}" method="post">
+								<input type="submit" class="btn btn-outline-info"
+									value="Nutzeruebersicht">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+					<li class="nav-item" th:if="${currentUser != null}"><a class="navbar-nav p-1"
+						th:if="${#strings.toString(currentUser.user.role) != 'ADMIN'}">
+							<form th:action="@{'/users/customers/' + ${currentUser.id}}" method="post">
+								<input type="submit" class="btn btn-outline-info"
+									value="Dein Profil">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+					<li class="nav-item" ><a class="navbar-nav p-1">
+							<form th:action="@{/pizzas}" method="post">
+								<input type="submit" class="btn btn-outline-default"
+									value="Home">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+					<li class="nav-item" ><a class="navbar-nav p-1" th:if="${currentUser != null}">
+							<form th:action="@{/cart/order}" method="post">
+								<input type="submit" class="btn btn-warning"
+									value="Bestellung">
+								<!-- onclick="myStopFunction()" -->
+							</form>
+					</a></li>
+					
+				</ul></div>
+		</nav></div>
+		<br></div>
+
+	<div th:fragment="greeting (all)">
+	<div class="container">
+	<h5>
+				<span th:if="${currentUser != null}" th:text="${currentUser}">unbekannte
+					/ unbekannter</span>
+			</h5>
+			<br>
+	</div>
+	</div>
+	
+	</body>
+
+</html>
+	

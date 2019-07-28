@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBottomNav">#eeeeeeee</color>
+    <color name="red_urgency">#FF0000</color>
+    <color name="orange_urgency">#ffa500</color>
+    <color name="yellow_urgency">#eae22a</color>
+    <color name="white_urgency">#FFFFFF</color>
+    <color name="date_color">#b30000</color>
+    <color name="header_color_experiment">#d0d0d0</color>
+    <color name="black">#000000</color>
+</resources>

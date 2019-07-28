@@ -1,0 +1,136 @@
+{
+    "contacts": [
+        {
+                "id": "c201",
+                "name": "Herbert Grönemeyer",
+                "email": "herbert_groenemeyer@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c202",
+                "name": "Gabriele Kerner",
+                "email": "gabriele_kerner@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c203",
+                "name": "Cyndi Lauper",
+                "email": "cyndi_lauper@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c204",
+                "name": "Robbie Williams",
+                "email": "robbie_williams@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "female",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c205",
+                "name": "Dido",
+                "email": "dido@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "female",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c206",
+                "name": "Adele",
+                "email": "adele@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "female",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c207",
+                "name": "Robin Schulz",
+                "email": "robin_schulz@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c208",
+                "name": "Pharrell Williams",
+                "email": "pharrell_williams@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c209",
+                "name": "Martin Solveig",
+                "email": "martin_solveig@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c2010",
+                "name": "Ellie Goulding",
+                "email": "ellie_gounding@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "male",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        },
+        {
+                "id": "c2011",
+                "name": "Men at Work",
+                "email": "men_at_work@gmail.com",
+                "address": "xx-xx-xxxx,x - street, x - country",
+                "gender" : "female",
+                "phone": {
+                    "mobile": "+49 0000000000",
+                    "home": "00 000000",
+                    "office": "00 000000"
+                }
+        }
+    ]
+}

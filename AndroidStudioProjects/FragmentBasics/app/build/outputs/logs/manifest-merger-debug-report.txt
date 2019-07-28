@@ -1,0 +1,140 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\86eb8e7e93267d95934fd504ba5d3598\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\05f4d6667df23536d65ea1fc139d0e13\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\6a00eb7c6ae960f3c4dbdc34b611f944\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1d667a15526bdda1e8edf58ba71cca38\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5e8715145390da9e5bfe72b42333d93a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c505810f2e9f8d7ac01bb366a284c6f6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\2f060de9e6d3ca4def7220f32a675f57\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\59dd2f4c031ccd55803dd41c28793c15\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\2138a68614ec4b2be4b66d65803cde7b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\84045ecc9035baf99b68ec8c1cbb9cc6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\2237c0f1fa4d9bf0a33cc79332d2a176\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\694da77e38fe0b8ec3e3d9b0eaece71c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1c970a4677886d7b2355308470cb33fb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfcf2a0001d2cd84c23414018dbdc9d7\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1fa92f350e9a6ba7a8fb6f11289144dc\AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ff8b130e30fc94f6e8d52c55ab2c647b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\15c677fb335652d52478205b54925a54\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\2925c3f3df57b6622d7091c136923d7c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\6c3182d5285f1919a8a6acae56d18ff8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\6e8deb19a143937de6bd01b614a74e1a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d359570542f0169fc45fdee7285c3a1e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\41f3ce2ece95fe96a7b50183ec88e8ae\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e6f319b4c2bc08d0e9146c4ca1b3d3db\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\179fa449f175e38c35485207a01f607c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d61207cdcf317c75052925bfb31fa6d1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:1-36:12
+	package
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:19:5-44
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:21:5-30
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:18:11-69
+	android:versionCode
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:20:5-28
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:23:5-34:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfcf2a0001d2cd84c23414018dbdc9d7\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfcf2a0001d2cd84c23414018dbdc9d7\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1fa92f350e9a6ba7a8fb6f11289144dc\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1fa92f350e9a6ba7a8fb6f11289144dc\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfcf2a0001d2cd84c23414018dbdc9d7\AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:25:9-41
+	android:icon
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:24:9-45
+activity#com.example.android.fragments.MainActivity
+ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:26:9-33:20
+	android:label
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:28:13-45
+	android:name
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:27:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml:31:27-74
+uses-sdk
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\86eb8e7e93267d95934fd504ba5d3598\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\86eb8e7e93267d95934fd504ba5d3598\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\05f4d6667df23536d65ea1fc139d0e13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\05f4d6667df23536d65ea1fc139d0e13\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\6a00eb7c6ae960f3c4dbdc34b611f944\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\6a00eb7c6ae960f3c4dbdc34b611f944\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1d667a15526bdda1e8edf58ba71cca38\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\1d667a15526bdda1e8edf58ba71cca38\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5e8715145390da9e5bfe72b42333d93a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\5e8715145390da9e5bfe72b42333d93a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c505810f2e9f8d7ac01bb366a284c6f6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c505810f2e9f8d7ac01bb366a284c6f6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\2f060de9e6d3ca4def7220f32a675f57\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\2f060de9e6d3ca4def7220f32a675f57\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\59dd2f4c031ccd55803dd41c28793c15\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\59dd2f4c031ccd55803dd41c28793c15\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\2138a68614ec4b2be4b66d65803cde7b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\2138a68614ec4b2be4b66d65803cde7b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\84045ecc9035baf99b68ec8c1cbb9cc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\84045ecc9035baf99b68ec8c1cbb9cc6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\2237c0f1fa4d9bf0a33cc79332d2a176\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\2237c0f1fa4d9bf0a33cc79332d2a176\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\694da77e38fe0b8ec3e3d9b0eaece71c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\694da77e38fe0b8ec3e3d9b0eaece71c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1c970a4677886d7b2355308470cb33fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\1c970a4677886d7b2355308470cb33fb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfcf2a0001d2cd84c23414018dbdc9d7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\bfcf2a0001d2cd84c23414018dbdc9d7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1fa92f350e9a6ba7a8fb6f11289144dc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\1fa92f350e9a6ba7a8fb6f11289144dc\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ff8b130e30fc94f6e8d52c55ab2c647b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\ff8b130e30fc94f6e8d52c55ab2c647b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\15c677fb335652d52478205b54925a54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\15c677fb335652d52478205b54925a54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\2925c3f3df57b6622d7091c136923d7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\2925c3f3df57b6622d7091c136923d7c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\6c3182d5285f1919a8a6acae56d18ff8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\6c3182d5285f1919a8a6acae56d18ff8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\6e8deb19a143937de6bd01b614a74e1a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\6e8deb19a143937de6bd01b614a74e1a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d359570542f0169fc45fdee7285c3a1e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\d359570542f0169fc45fdee7285c3a1e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\41f3ce2ece95fe96a7b50183ec88e8ae\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\41f3ce2ece95fe96a7b50183ec88e8ae\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e6f319b4c2bc08d0e9146c4ca1b3d3db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\e6f319b4c2bc08d0e9146c4ca1b3d3db\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\179fa449f175e38c35485207a01f607c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\179fa449f175e38c35485207a01f607c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d61207cdcf317c75052925bfb31fa6d1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Eldiar Flügel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\d61207cdcf317c75052925bfb31fa6d1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		ADDED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Compilers\Android\AndroidStudioProjects\FragmentBasics\app\src\main\AndroidManifest.xml

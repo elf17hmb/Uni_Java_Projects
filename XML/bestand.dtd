@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!ELEMENT bestand (buch*)>
+<!ELEMENT buch (titel, autor+, verlag, erscheinungsjahr, isbn, (praesenzexemplar | ausleihe)?)>
+<!ATTLIST buch
+  signatur CDATA #REQUIRED
+>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT verlag (#PCDATA)>
+<!ELEMENT erscheinungsjahr (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT praesenzexemplar EMPTY>
+<!ELEMENT ausleihe (name, datum+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT datum (#PCDATA)>
+<!ATTLIST datum
+  typ (ausleihe | rueckgabe) #REQUIRED
+>

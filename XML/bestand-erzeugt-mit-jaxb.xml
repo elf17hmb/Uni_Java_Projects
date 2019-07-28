@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bestand>
+    <buch>
+        <autor>Stefanie Olm</autor>
+        <titel>All you ever wanted to know about XML</titel>
+        <verlag>Cambridge University Press</verlag>
+        <isbn>1-861005-37-7</isbn>
+        <erscheinungsjahr>2008</erscheinungsjahr>
+    </buch>
+    <buch>
+        <autor>Beate Schumann</autor>
+        <titel>XML für Sozialwissenschaftler</titel>
+        <verlag>Springer-Verlag</verlag>
+        <isbn>0-201-79168-4</isbn>
+        <erscheinungsjahr>2012</erscheinungsjahr>
+    </buch>
+</bestand>

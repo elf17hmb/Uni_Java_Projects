@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<head th:include="fragments/header :: head">
+</head>
+<body>
+<div th:include="fragments/body :: headline (txt='Dein Warenkorb' )"></div>
+<div th:include="fragments/body :: nav (all=true)"></div> 
+<section class="container">	
+<div class="section-title h5">Warenkorb</div>
+		<table th:if="${listAllItems != null}" class="table table-hover table-bordered table-sm">
+		    <thead class="thead-light">
+			 <tr>
+				 <th scope="col">Menge</th>
+				 <th scope="col">Pizza</th>
+				 <th scope="col">Preis+Größe</th>
+				 <th scope="col">Edit</th>
+				 <th scope="col">Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="item : ${listAllItems}">
+			<div th:name="modelAttr"></div>
+				
+			<form th:action = "@{/cart/edit}" method = "GET" name="edit">
+	            <td ><input type="number" class="form-control" name="quantity" id="quantity" min = "0" th:value= "${item.quantity}"></td>
+				<td th:value ="${item.name}" th:text="${item.name}" name = "pizzaName">
+				</td><input type="hidden" name = "id" th:value = "${item.itemId}" />
+<!-- 				<td th:value = "${item.size}" th:text = "${item.price} + '/' + ${item.size}"/></td> -->
+				<td><select class="form-control" id="pizzasize" name = "size">
+				<option th:value = "${pizzaSize.Small}" th:text="${item.priceSmall} + '€' + '/' + ${pizzaSize.Small}" th:selected="${item.size == pizzaSize.Small}" ></option>
+				<option th:value ="${pizzaSize.Medium}" th:text="${item.priceMedium} + '€' + '/' + ${pizzaSize.Medium}" th:selected="${item.size == pizzaSize.Medium}"></option>
+				<option th:value ="${pizzaSize.Large}" th:text="${item.priceLarge} + '€' + '/' + ${pizzaSize.Large}" th:selected="${item.size == pizzaSize.Large}"></option>
+				</select></td>
+				<td > <input type="submit" class="btn btn-outline-primary btn-sm" value="edit"></td>	
+			</form>
+			<form th:action = "@{/cart/deleteFromCart}" method = "GET">
+				<input type="hidden" name = "id" th:value = "${item.itemId}" />
+				<td > <input type="submit" class="btn btn-outline-primary btn-sm" value="delete"></td>	
+			</form>	
+
+			</tr>
+			<td colspan = "5" th:text="'Gesamtbetrag: ' + ${totalprice} + '€'"/>
+			<tr>
+			<td colspan="5" th:if= "!${listAllItems.isEmpty()}">
+			<div class="float-lg-right">
+			 <form class="container" th:action = "${currentUser == null ? '/login' : '/cart/order/add'}">
+				<input type="submit" class="btn btn-warning" th:disabled="${listAllItems.isEmpty()}" value="Bestellen">
+				</form>	
+				</div>  
+			</td>
+			</tr>
+		</tbody>
+	</table>
+<!-- 	<div class="row"> -->
+<!-- 		<div class="card col-12 col-lg-3 col-md-4 col-sm-6" -->
+<!-- 			th:each="itemDTO : ${listAllItems}"> -->
+<!-- <!-- 			<img class="card-img-top" src="../src/main/resources/static/pizza-salami.png" alt="Card image"/> --> 
+<!-- 			<img class = "card-img-top" th:if="${itemDTO.name == 'Salami'}" src="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-salami.png"/> -->
+<!-- 			<img class="card-img-top" th:if="${itemDTO.name == 'Hawaii' }"src="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-hawaii.png"/> -->
+<!-- 			<img class="card-img-top" th:if="${itemDTO.name == 'Veggie' }" src = "https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-vegetaria.png"/> -->
+<!-- 			<img class="card-img-top" th:if="${itemDTO.name == 'Bacon&Eggs' }" src ="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-bacon-eggs.png"/> -->
+<!-- 			<div class="card-body text-center "> -->
+<!-- 				<h4 class="card-title" th:text="${itemDTO.name}"></h4> -->
+<!-- 				<form th:action = "@{/cart/deleteFromCart}" method = "GET">	 -->
+<!-- 				<p class= "card-text"> Anzahl: -->
+<!-- 				<input type="number" class="form-control" name="quantity" id="quantity" min = "0" th:value= "${itemDTO.quantity}" disabled> -->
+<!-- 				<input type="hidden" th:value ="${itemDTO.name}"  name = "pizzaName"/> -->
+<!-- 				<input type="hidden" name = "id" th:value = "${itemDTO.itemId}" /> -->
+<!-- 				</p> -->
+<!-- 				<p class= "card-text" th:value = "${itemDTO.size}" th:text = "${itemDTO.price} +'€'+ '/' + ${itemDTO.size}"></p> -->
+<!-- 				<a><input type="submit" class="btn btn-outline-primary btn-sm" value="delete"></a> -->
+<!-- 				</form> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+	
+	</section>
+ 
+	<form class="container" th:action = "@{/pizzas}">
+				<input type="submit" class="btn btn-outline-primary btn-sm" value="Zurück zum Home">
+				</form>	
+	
+
+	<div th:include="fragments/footer :: footer"></div>
+
+</body>
+</html>

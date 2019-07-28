@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<head th:include="fragments/header :: head">
+</head>
+<body>
+<div th:include="fragments/body :: headline (txt='was kann ich für dich tun?' )"></div>
+<div th:include="fragments/body :: nav (all=true)"></div> 
+<section class="container">	
+<div class="section-title h5">Deine Bestellung</div>
+		<table th:if="${listAllOrderedItems != null}" class="table table-hover table-bordered table-sm">
+		    <thead class="thead-light">
+			 <tr>
+				 <th scope="col">Menge</th>
+				 <th scope="col">Pizza</th>
+				 <th scope="col">Preis+Größe</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="item : ${listAllOrderedItems}">
+			<div th:name="modelAttr"></div>
+				
+	            <td ><input type="number" class="form-control" name="quantity" id="quantity" min = "0" th:value= "${item.quantity}" disabled></td>
+				<td th:value ="${item.name}" th:text="${item.name}" name = "pizzaName">
+				</td><input type="hidden" name = "id" th:value = "${item.pizzaId}" />
+<!-- 				<td th:value = "${item.size}" th:text = "${item.price} + '/' + ${item.size}"/></td> -->
+				<td th:value = "${item.size}" th:text = "${item.price} + '/' + ${item.size}"/></td>
+
+			</tr>
+			<td th:text="'Gesamtbetrag: ' + ${totalprice} + '€'"/>
+		</tbody>
+	</table>
+<!-- 	<div class="row"> -->
+<!-- 		<div class="card col-12 col-lg-3 col-md-4 col-sm-6" -->
+<!-- 			th:each="itemDTO : ${listAllItems}"> -->
+<!-- <!-- 			<img class="card-img-top" src="../src/main/resources/static/pizza-salami.png" alt="Card image"/> --> 
+<!-- 			<img class = "card-img-top" th:if="${itemDTO.name == 'Salami'}" src="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-salami.png"/> -->
+<!-- 			<img class="card-img-top" th:if="${itemDTO.name == 'Hawaii' }"src="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-hawaii.png"/> -->
+<!-- 			<img class="card-img-top" th:if="${itemDTO.name == 'Veggie' }" src = "https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-vegetaria.png"/> -->
+<!-- 			<img class="card-img-top" th:if="${itemDTO.name == 'Bacon&Eggs' }" src ="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-bacon-eggs.png"/> -->
+<!-- 			<div class="card-body text-center "> -->
+<!-- 				<h4 class="card-title" th:text="${itemDTO.name}"></h4> -->
+<!-- 				<form th:action = "@{/cart/deleteFromCart}" method = "GET">	 -->
+<!-- 				<p class= "card-text"> Anzahl: -->
+<!-- 				<input type="number" class="form-control" name="quantity" id="quantity" min = "0" th:value= "${itemDTO.quantity}" disabled> -->
+<!-- 				<input type="hidden" th:value ="${itemDTO.name}"  name = "pizzaName"/> -->
+<!-- 				<input type="hidden" name = "id" th:value = "${itemDTO.itemId}" /> -->
+<!-- 				</p> -->
+<!-- 				<p class= "card-text" th:value = "${itemDTO.size}" th:text = "${itemDTO.price} +'€'+ '/' + ${itemDTO.size}"></p> -->
+<!-- 				<a><input type="submit" class="btn btn-outline-primary btn-sm" value="delete"></a> -->
+<!-- 				</form> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
+	
+	</section>
+	<form class="container" th:action = "@{/pizzas}">
+				<input type="submit" class="btn btn-outline-primary btn-sm" value="Zurück zum Home">
+				</form>	
+	
+
+
+</body>
+</html>

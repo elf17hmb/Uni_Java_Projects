@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/quest_end_txt_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorBottomNav"
+        android:gravity="center"
+        android:text="@string/final_score"
+        android:textColor="@color/black"
+        android:elevation="5dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_quest_end_final_score"
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/date_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest_end_txt_header" />
+
+
+    <TextView
+        android:id="@+id/your_score_txt_v"
+        android:layout_width="106dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/total_score"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quest_end_txt_header" />
+
+    <TextView
+        android:id="@+id/factor_1"
+        android:layout_width="262dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/short_range_planning_score"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_score_txt_v" />
+
+    <TextView
+        android:id="@+id/txt_quest_end_factor1_score"
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="80dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/date_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quest_end_final_score" />
+
+
+    <TextView
+        android:id="@+id/factor_2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/time_attitudes_score"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/factor_1" />
+
+
+    <TextView
+        android:id="@+id/txt_quest_end_factor2_score"
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="40dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/date_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quest_end_factor1_score" />
+
+    <TextView
+        android:id="@+id/factor_3"
+        android:layout_width="257dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/long_range_planning_score"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/factor_2" />
+
+    <TextView
+        android:id="@+id/txt_quest_end_factor3_score"
+        android:layout_width="80dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="44dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/date_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_quest_end_factor2_score" />
+
+    <ImageView
+        android:id="@+id/imgViewAgain"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:elevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_again_black_24dp" />
+
+</android.support.constraint.ConstraintLayout>

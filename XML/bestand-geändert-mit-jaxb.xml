@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bestand>
+    <buch>
+        <titel>Professional Java Server Programming</titel>
+        <autor>Subrahmanyam Allamaraju</autor>
+        <autor>Cedric Buest</autor>
+        <autor>John Davies</autor>
+        <verlag>Wrox Press</verlag>
+        <erscheinungsjahr>2001</erscheinungsjahr>
+        <isbn>1-861005-37-7</isbn>
+        <praesenzexemplar></praesenzexemplar>
+    </buch>
+    <buch>
+        <titel>The J2EE Tutorial</titel>
+        <autor>Stephanie Bodoff</autor>
+        <autor>Dale Green</autor>
+        <autor>Kim Haase</autor>
+        <verlag>Addison-Wesley</verlag>
+        <erscheinungsjahr>2002</erscheinungsjahr>
+        <isbn>0-201-79168-4</isbn>
+        <ausleihe>
+            <name>Malte Berger</name>
+            <datum>2004-09-15</datum>
+            <datum>2004-10-15</datum>
+        </ausleihe>
+    </buch>
+    <buch>
+        <titel>geändert!</titel>
+        <autor>Christian Ullenboom</autor>
+        <verlag>Galileo Computing</verlag>
+        <erscheinungsjahr>2004</erscheinungsjahr>
+        <isbn>3-89842-365-4</isbn>
+    </buch>
+</bestand>

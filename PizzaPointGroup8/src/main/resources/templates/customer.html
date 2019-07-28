@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<head th:include="fragments/header :: head">
+</head>
+
+<body>
+
+	<div th:include="fragments/body :: headline (txt='Deine Nutzerdaten' )"></div>
+	<div th:include="fragments/body :: nav (all=false)"></div>
+
+	<div class="container">
+		<!-- <table class="table table-hover table-bordered table-fixed"> -->
+		<table class="table table-hover table-bordered table-sm">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">nutzerdetails</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Login Name</td>
+					<td th:text="${customer.loginName}">phoneno</td>
+				</tr>
+				<tr>
+					<td>email</td>
+					<td th:text="${customer.email}">email</td>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td th:text="${customer.firstName}">first name</td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td th:text="${customer.LastName}">last name</td>
+				</tr>
+				<tr>
+					<td>User Password - Hashcode</td>
+					<td th:text="${user.passwordHash}">passwordHash</td>
+				</tr>
+			</tbody>
+		</table>
+		<table th:if="${deliveryAddressList != null}" class="table table-hover table-bordered table-sm">
+		<thead class="thead-light">
+			 <tr>
+				 <th scope="col">Straße</th>
+				 <th scope="col">HausNr.</th>
+				  <th scope="col">Ort</th>
+				 <th scope="col">PLZ</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="deliveryAddress : ${deliveryAddressList}">
+				<div th:name="modelAttr"></div>
+				<td th:value ="${deliveryAddress.street}" th:text="${deliveryAddress.street}" name = "street"></td>
+				<td th:value = "${deliveryAddress.housenumber}" th:text="${deliveryAddress.housenumber}" name = "housenumber"></td>
+				<td th:value = "${deliveryAddress.town}" th:text="${deliveryAddress.town}" name = "town"></td>
+				<td th:value = "${deliveryAddress.postalCode}" th:text="${deliveryAddress.postalCode}" name = "postalCode"></td>
+<!-- 				<td th:value = "${user.passwordHash}" th:text="${user.passwordHash}" name = "email"></td> -->
+				
+<!-- 				<td ><a type="button"  th:if="${user.loginName != 'admin'}" class="btn btn-info"  th:href="@{'/users/customers/' + ${user.id}}" >Details</a></td>	 -->
+						
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+
+	<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>

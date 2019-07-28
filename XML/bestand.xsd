@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" jaxb:version="1.0">
+	
+	<xs:element name="bestand">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="buch" type="buchType" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="buchType">
+		<xs:sequence>
+			<xs:element name="titel" type="xs:string"/>
+			<xs:element name="autor" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+			<xs:element name="verlag" type="xs:string"/>
+			<xs:element name="erscheinungsjahr" type="xs:int"/>
+			<xs:element name="isbn" type="xs:string"/>
+			<xs:choice>
+				<xs:element name="praesenzexemplar" type="xs:string"/>
+				<xs:element name="ausleihe" type="ausleiheType"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ausleiheType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="datum" type="xs:date" minOccurs="2" maxOccurs="2"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+
+
+</xs:schema>

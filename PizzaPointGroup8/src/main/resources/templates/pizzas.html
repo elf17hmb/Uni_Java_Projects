@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<head th:include="fragments/header :: head">
+</head>
+<body>
+
+	<div th:include="fragments/body :: headline (txt='Pizza Point' )"></div>
+	<div th:include="fragments/body :: nav (all=true)"></div>    
+<!-- 		<div class="container"> -->
+<!--              <div class="well"> -->
+<!--              <img src="https://staticdelivery.nexusmods.com/mods/130/images/thumbnails/65662/65662-1537389024-1257889344.jpeg" class="img-rounded" alt="Cinque Terre" width="56" height="56"> -->
+<!--              PizzaPoint-App -->
+<!--              <button type="button" class="btn btn-outline-dark" style="float: right">Auswahl</button> -->
+<!--              <button type="button" onclick="location.href='/login'" class="btn btn-outline-success" style="float: right">einloggen</button> -->
+<!--              </div> -->
+           
+  
+	<section class="container">	
+<!-- 		<table th:if="${listAllPizzas != null}" class="table table-hover table-bordered table-sm"> -->
+<!-- 		    <thead class="thead-light"> -->
+<!-- 			 <tr> -->
+<!-- 				 <th scope="col">Menge</th> -->
+<!-- 				 <th scope="col">Pizza</th> -->
+<!-- 				 <th scope="col">Preis+Größe</th> -->
+<!-- 				 <th scope="col">in den Warenkorb</th> -->
+<!-- 			</tr> -->
+<!-- 		</thead> -->
+<!-- 		<tbody> -->
+<!-- 			<tr th:each="pizza : ${listAllPizzas}"> -->
+<!-- 			<div th:name="modelAttr"></div> -->
+<!-- 			<form th:action = "@{/pizzas/addToCart}"  method = "GET">	 -->
+<!-- 	            <td ><input type="number" class="form-control" name="quantity" id="quantity" min = "0" value= "0"></td> -->
+<!-- 				<td th:value ="${pizza.name}" th:text="${pizza.name}" name = "pizzaName"> -->
+<!-- 				</td><input type="hidden" name = "pizzaName" th:value = "${pizza.name}" /> -->
+<!-- 				<td ><select class="form-control" id="pizzasize" name = "size"> -->
+<!-- 				<option th:value = "${pizzaSize.Small}" th:text="'Small/' + ${pizza.priceSmall} + '€'" ></option> -->
+<!-- 				<option th:value ="${pizzaSize.Medium}" th:text="'Medium/' + ${pizza.priceMedium} + '€'" ></option> -->
+<!-- 				<option th:value ="${pizzaSize.Large}" th:text="'Large/' + ${pizza.priceLarge} + '€'" ></option> -->
+<!-- 				</select></td> -->
+<!-- 				<td > <input type="submit"  class="btn btn-outline-primary btn-sm" value="In den Warenkorb"></td>			 -->
+<!-- 			</form> -->
+						
+<!-- 			</tr> -->
+<!-- 		</tbody> -->
+<!-- 	</table> -->
+	
+	<div class="row">
+		<div class="card col-12 col-lg-3 col-md-4 col-sm-6"
+			th:each="pizza : ${listAllPizzas}">
+<!-- 			<img class="card-img-top" src="../src/main/resources/static/pizza-salami.png" alt="Card image"/> -->
+			<img class = "card-img-top" th:if="${pizza.name == 'Salami'}" src="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-salami.png"/>
+			<img class="card-img-top" th:if="${pizza.name == 'Hawaii' }"src="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-hawaii.png"/>
+			<img class="card-img-top" th:if="${pizza.name == 'Veggie' }" src = "https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-vegetaria.png"/>
+			<img class="card-img-top" th:if="${pizza.name == 'Bacon&Eggs' }" src ="https://dlct0dt1hx57m.cloudfront.net/static/desktop/products/pizza-bacon-eggs.png"/>
+			<div class="card-body text-center ">
+			<h4 class="card-title" th:text="${pizza.name}"></h4>
+			<form th:action = "@{/pizzas/addToCart}" method = "GET">	
+				<p class= "card-text"> Menge:
+				<input type="number" class="form-control" name="quantity" id="quantity" min = "0" value= "0">
+				<input type="hidden" th:value ="${pizza.name}"  name = "pizzaName"/>
+				</p>
+				<p >Größe/Preis:
+				<select class="form-control" id="pizzasize" name = "size">
+				<option th:value = "${pizzaSize.Small}" th:text="'Small/' + ${pizza.priceSmall} + '€'" ></option>
+				<option th:value ="${pizzaSize.Medium}" th:text="'Medium/' + ${pizza.priceMedium} + '€'" ></option>
+				<option th:value ="${pizzaSize.Large}" th:text="'Large/' + ${pizza.priceLarge} + '€'" ></option>
+				</select></p>
+				<a><input type="submit" class="btn btn-outline-primary btn-sm" value="In den Warenkorb"></a>
+				</form>
+			</div>
+		</div>
+	<span th:text="'IM WARENKORB: Anzahl der Gegenstände: ' + ${listAllItems.size()} + ' mit Gesamtbetrag: ' + ${totalprice}	+ '€'"/>
+		
+	</div>
+	<form th:action = "@{/cart}">
+	<input type="submit" class="btn btn-outline-primary btn-block" value="In den Warenkorb">
+	</form>
+	<!-- <h5>Vorlesung:</h5>
+	       <form th:action="@{/add }" method="post">
+	           <input class="form-control" type="text" name="lecture" minlength="1"
+	                          maxlength="255" style="width: 500px;"> <br /> 
+	<h5>Note:</h5>
+	           <input class="form-control" type="text" name="grade" minlength="1"
+	                          maxlength="255" style="width: 500px;"> <br /> 
+	              <input type="submit" class="btn btn-outline-primary btn-sm" value="Note eintragen">
+	              
+	       </form>
+	       
+	       <script th:if="${errorMessage != null}" th:inline="javascript">
+				/*<![CDATA[*/
+				
+				    alert(/*[[${errorMessage}]]*/ 'ein Fehler ist aufgetreten');
+				
+				/*]]>*/
+			</script>
+	 -->
+	</section>
+	<div th:include="fragments/footer :: footer"></div>
+</body>
+</html>
